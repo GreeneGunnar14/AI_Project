@@ -6,10 +6,10 @@
   * Train models to point of diminishing returns in terms of recall and precision scores
   * Collect prediction statistics for all models
   * Compare statistics and rank models based on predictions
-  * Analyze outcomes and describe potential causes for each models perfomance
+  * Analyze outcomes and describe potential causes for each model's perfomance
   
 ## Elements:
 
-  * X number of unique ML models
+  * 3 (4?/5?) unique models
   * Dataset: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
   * ML prediction statistics
