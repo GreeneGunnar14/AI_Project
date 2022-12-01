@@ -1,10 +1,10 @@
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score, mean_squared_error
+from sklearn.metrics import silhouette_score
 from tqdm import tqdm
 from data_processing import preprocess
 from plot_helpers import plot_elbow_method,  plot_silhouette_method, plot_3d
 
-def test_clusters(train_x, train_y, test_x, test_y):
+def test_clusters(train_x):
   clusters = range(2, 21)
 
   inertia_values = []
@@ -29,5 +29,7 @@ if __name__ == '__main__':
   kmeans = KMeans(n_clusters=num_clusters)
 
   kmeans.fit(train_x, train_y)
+
+  plot_3d(train_x, kmeans.labels_)
 
   
