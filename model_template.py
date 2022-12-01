@@ -1,6 +1,8 @@
+# NOTE: This template will likely not be used as the outline of the process has changed since it was introduced
+
 #Import libraries
 from sklearn.metrics import accuracy_score, precision_score, recall_score
-from plot_helpers import plot_learning_curve, plot_3d
+from plot_helpers import plot_learning_curve
 #Import preprocessed data
 
 #Create model, define training and predicting on data
@@ -41,3 +43,4 @@ class Model:
   def save_learning_curve(self):
     plt = plot_learning_curve(self.estimator, f'{self.name} Learning Curve', self.train_x, self.train_y)
     plt.savefig(f'{self.name}_learning_curve.png')
+

@@ -1,9 +1,8 @@
 from sklearn.tree import DecisionTreeClassifier
 from model_template import Model
 from data_processing import preprocess
-from sklearn.metrics import accuracy_score
 
-#TODO setup and test decision tree
+#TODO setup decision tree to be imported
 if __name__ == '__main__':
   train_x, train_y, test_x, test_y = preprocess()
 

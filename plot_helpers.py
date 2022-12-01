@@ -131,7 +131,7 @@ def plot_learning_curve(
     axes.legend(loc="best")
     return plt
 
-def plot_3d(data,labels,fname):
+def plot_3d(data,labels):
     fig = plt.figure()
     ax = Axes3D(fig)
 
