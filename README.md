@@ -18,3 +18,4 @@
 
  * The files for individual models (decision_tree.py, kmeans.py, etc.) were used purely to test the process of setting each models. They will be left in the repository for the purpose of keeping some record of this process.
  * main.ipynb is the primary file for this lab, and contains examples and examinations of each model.
+ * The vitrual environment 'aienv' was not used for the final version of this lab as there were complications when using pip to install matplotlib
