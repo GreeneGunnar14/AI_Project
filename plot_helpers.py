@@ -5,7 +5,7 @@ from sklearn.model_selection import learning_curve
 # load plot helper code
 def plot_learning_curve(
     estimator,
-    title,
+    title, 
     X,
     y,
     axes=None,
