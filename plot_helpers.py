@@ -131,7 +131,7 @@ def plot_learning_curve(
     axes.legend(loc="best")
     return plt
 
-def plot_3d(data,labels):
+def plot_3d(data,labels,fname):
     fig = plt.figure()
     ax = Axes3D(fig)
 
@@ -144,7 +144,8 @@ def plot_3d(data,labels):
     ax.set_xlabel('Feature 1')
     ax.set_ylabel('Feature 2')
     ax.set_zlabel('Feature 3')
-    plt.show()
+    return plt
+    # plt.savefig(f'{fname}.png')
 
 def plot_silhouette_method(data):
     fig , ax = plt.subplots()
@@ -153,7 +154,8 @@ def plot_silhouette_method(data):
     ax.set_title("Silhouette Score")
     ax.set_xlabel('Clusters')
     ax.set_ylabel('Distance Between Clusters')
-    plt.show()
+    # plt.show()
+    return plt
 
 def plot_calinski_harabasz_index(data):
     fig , ax = plt.subplots()
@@ -162,7 +164,8 @@ def plot_calinski_harabasz_index(data):
     ax.set_title("Calinski-Harabasz Index")
     ax.set_xlabel('Number of Components')
     ax.set_ylabel('Score')
-    plt.show()
+    # plt.show()
+    return plt
 
 def plot_elbow_method(data):
     fig , ax = plt.subplots()
@@ -171,4 +174,5 @@ def plot_elbow_method(data):
     ax.set_title("Elbow Method")
     ax.set_xlabel('Clusters')
     ax.set_ylabel('Inertia')
-    plt.show()
+    # plt.show()
+    return plt

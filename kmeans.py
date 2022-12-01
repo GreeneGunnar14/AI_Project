@@ -19,8 +19,6 @@ def test_clusters(train_x):
   plot_elbow_method(inertia_values)
   plot_silhouette_method(silhouette_scores)
 
-
-
 if __name__ == '__main__':
   train_x, train_y, test_x, test_y = preprocess()
 
