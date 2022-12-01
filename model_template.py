@@ -1,6 +1,6 @@
 #Import libraries
 from sklearn.metrics import accuracy_score, precision_score, recall_score
-from plot_helpers import plot_learning_curve
+from plot_helpers import plot_learning_curve, plot_3d
 #Import preprocessed data
 
 #Create model, define training and predicting on data

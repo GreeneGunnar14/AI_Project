@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import learning_curve
+from mpl_toolkits.mplot3d import Axes3D
 
 # load plot helper code
 def plot_learning_curve(
@@ -129,3 +130,45 @@ def plot_learning_curve(
     )
     axes.legend(loc="best")
     return plt
+
+def plot_3d(data,labels):
+    fig = plt.figure()
+    ax = Axes3D(fig)
+
+    sequence_containing_x_vals = data[:,0]
+    sequence_containing_y_vals = data[:,1]
+    sequence_containing_z_vals = data[:,2]
+
+    ax.scatter(sequence_containing_x_vals, sequence_containing_y_vals, sequence_containing_z_vals,c=labels)
+    ax.set_title("Data Features")
+    ax.set_xlabel('Feature 1')
+    ax.set_ylabel('Feature 2')
+    ax.set_zlabel('Feature 3')
+    plt.show()
+
+def plot_silhouette_method(data):
+    fig , ax = plt.subplots()
+
+    ax.plot(data)
+    ax.set_title("Silhouette Score")
+    ax.set_xlabel('Clusters')
+    ax.set_ylabel('Distance Between Clusters')
+    plt.show()
+
+def plot_calinski_harabasz_index(data):
+    fig , ax = plt.subplots()
+
+    ax.plot(data)
+    ax.set_title("Calinski-Harabasz Index")
+    ax.set_xlabel('Number of Components')
+    ax.set_ylabel('Score')
+    plt.show()
+
+def plot_elbow_method(data):
+    fig , ax = plt.subplots()
+
+    ax.plot(data)
+    ax.set_title("Elbow Method")
+    ax.set_xlabel('Clusters')
+    ax.set_ylabel('Inertia')
+    plt.show()
