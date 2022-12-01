@@ -13,3 +13,8 @@
   * 3 (4?/5?) unique models
   * Dataset: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
   * ML prediction statistics
+
+## Note:
+
+ * The files for individual models (decision_tree.py, kmeans.py, etc.) were used purely to test the process of setting each models. They will be left in the repository for the purpose of keeping some record of this process.
+ * main.ipynb is the primary file for this lab, and contains examples and examinations of each model.
