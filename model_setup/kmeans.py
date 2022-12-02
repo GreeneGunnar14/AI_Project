@@ -28,6 +28,7 @@ if __name__ == '__main__':
 
   kmeans.fit(train_x, train_y)
 
-  plot_3d(train_x, kmeans.labels_)
+  plt = plot_3d(train_x, kmeans.labels_)
+  plt.show()
 
   
